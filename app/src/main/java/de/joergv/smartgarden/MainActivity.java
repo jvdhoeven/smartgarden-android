@@ -59,16 +59,16 @@ public class MainActivity extends CordovaActivity {
                         onBackPressed();
                         return true;
                     case R.id.menu_select:
-                        webView.loadUrl("javascript:App.goToSelect();");
+                        webView.loadUrl("javascript:App.goTo('select');");
                         return true;
                     case R.id.menu_dashboard:
-                        webView.loadUrl("javascript:App.goToHome();");
+                        webView.loadUrl("javascript:App.goTo('dashboard');");
                         return true;
                     case R.id.menu_watering:
-                        webView.loadUrl("javascript:App.goToWatering();");
+                        webView.loadUrl("javascript:App.goTo('watering');");
                         return true;
                     case R.id.menu_settings:
-                        webView.loadUrl("javascript:App.goToSettings();");
+                        webView.loadUrl("javascript:App.goTo('settings');");
                         return true;
                 }
                 return false;
